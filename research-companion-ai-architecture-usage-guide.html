@@ -1,0 +1,226 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Research Companion AI</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"Segoe UI",system-ui,sans-serif;font-size:14px;line-height:1.6;background:#fff;color:#1f2328;padding:24px}
+.wrap{max-width:760px;margin:0 auto}
+h1{font-size:1.7rem;font-weight:700;color:#1f2328;margin-bottom:4px}
+h2{font-size:1.1rem;font-weight:600;color:#1f2328;margin:28px 0 10px;padding-bottom:6px;border-bottom:1px solid #e5e7eb}
+h3{font-size:0.95rem;font-weight:600;color:#1f2328;margin:16px 0 6px}
+p{color:#1f2328;margin-bottom:10px}
+.subtitle{color:#57606a;font-size:0.92rem;margin-bottom:20px}
+.header-banner{background:linear-gradient(135deg,#1e3a5f,#3b5998 55%,#7c5cd8);border-radius:10px;padding:24px 28px;color:white;margin-bottom:28px}
+.header-banner h1{color:white;font-size:1.8rem}
+.header-banner p{color:rgba(255,255,255,0.88);margin:6px 0 0;font-size:0.94rem}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+.grid4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:10px;margin-bottom:16px}
+.card{background:#f7f8fa;border:1px solid #e5e7eb;border-radius:8px;padding:14px 16px}
+.card .icon{font-size:1.6rem;margin-bottom:6px}
+.card h3{font-size:0.88rem;margin:0 0 4px;color:#1f2328}
+.card p{font-size:0.8rem;color:#57606a;margin:0}
+.feature-row{display:flex;align-items:flex-start;gap:12px;background:#f7f8fa;border:1px solid #e5e7eb;border-radius:8px;padding:12px 14px;margin-bottom:8px}
+.feature-row .num{background:#3b82d4;color:white;border-radius:50%;width:24px;height:24px;min-width:24px;font-size:0.78rem;font-weight:700;display:flex;align-items:center;justify-content:center}
+.feature-row .content h3{font-size:0.9rem;margin:0 0 3px}
+.feature-row .content p{font-size:0.82rem;color:#57606a;margin:0}
+code{background:#f0f0f0;padding:1px 5px;border-radius:3px;font-size:0.85rem;font-family:monospace;color:#1f2328}
+.code-block{background:#1e1e1e;color:#d4d4d4;border-radius:8px;padding:14px 16px;font-family:monospace;font-size:0.84rem;line-height:1.7;overflow-x:auto;margin:10px 0}
+.code-block .kw{color:#569cd6}.code-block .str{color:#ce9178}.code-block .cmt{color:#6a9955}
+table{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:0.87rem}
+th{background:#f7f8fa;border:1px solid #e5e7eb;padding:8px 12px;text-align:left;font-weight:600;color:#1f2328}
+td{border:1px solid #e5e7eb;padding:8px 12px;color:#1f2328}
+tr:nth-child(even) td{background:#fafafa}
+.badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:0.75rem;font-weight:500;margin:2px}
+.badge-blue{background:#eff6ff;color:#3b82d4}
+.badge-green{background:#f0fdf4;color:#16a34a}
+.badge-purple{background:#f5f3ff;color:#7c5cd8}
+.badge-orange{background:#fffbeb;color:#d97706}
+.arch-box{border:1px solid #e5e7eb;border-radius:8px;padding:16px;background:#fafafa;font-family:monospace;font-size:0.82rem;line-height:1.9;color:#1f2328;overflow-x:auto}
+.layer{border-left:3px solid #3b82d4;padding:10px 14px;margin-bottom:8px;background:white;border-radius:0 6px 6px 0}
+.layer.agent{border-color:#7c5cd8}
+.layer.ai{border-color:#22c55e}
+.layer.vis{border-color:#f59e0b}
+.layer.ui{border-color:#ef4444}
+.start-box{background:linear-gradient(135deg,#eff6ff,#f5f3ff);border:1px solid #bfdbfe;border-radius:8px;padding:16px 20px;margin-bottom:16px}
+.start-box h3{color:#3b82d4;font-size:0.95rem;margin-bottom:8px}
+.divider{border:none;border-top:1px solid #e5e7eb;margin:24px 0}
+footer{margin-top:40px;padding-top:16px;border-top:1px solid #e5e7eb;text-align:center;font-size:0.75rem;color:#57606a}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="header-banner">
+  <h1>🔬 Research Companion AI</h1>
+  <p>Intelligent agentic research assistant powered by Groq LLaMA 3.3 70B · arXiv · Semantic Scholar · CrossRef</p>
+</div>
+
+
+<div class="grid4">
+  <div class="card" style="text-align:center">
+    <div class="icon">📚</div>
+    <h3>Literature Review</h3>
+    <p>AI-synthesised academic reviews with citations and thematic analysis</p>
+  </div>
+  <div class="card" style="text-align:center">
+    <div class="icon">📈</div>
+    <h3>Trend Detection</h3>
+    <p>Emerging topics, declining areas, citation gaps, and hot keywords</p>
+  </div>
+  <div class="card" style="text-align:center">
+    <div class="icon">🔮</div>
+    <h3>Predictions</h3>
+    <p>Forward-looking analysis of research trajectories and breakthroughs</p>
+  </div>
+  <div class="card" style="text-align:center">
+    <div class="icon">📊</div>
+    <h3>9 Visualisations</h3>
+    <p>Topic clusters, citation networks, trend radars, sentiment gauges</p>
+  </div>
+</div>
+
+<h2>🚀 Quick Start</h2>
+<div class="start-box">
+  <h3>Option A — Launcher Script (recommended)</h3>
+  <div class="code-block">
+    <span class="cmt"># Navigate to the project folder</span><br />
+    cd research_companion<br />
+    python launch.py
+  </div>
+</div>
+<div class="start-box">
+  <h3>Option B — Direct Streamlit</h3>
+  <div class="code-block">
+    cd research_companion<br />
+    pip install -r requirements.txt<br />
+    streamlit run app.py
+  </div>
+</div>
+<div class="start-box">
+  <h3>Option C — Windows Double-Click</h3>
+  <div class="code-block">
+    Double-click: research_companion\run.bat
+  </div>
+</div>
+<p>Then open <strong>http://localhost:8501</strong> in your browser.</p>
+
+<hr class="divider" />
+
+<h2>🏗️ Architecture</h2>
+
+<div class="layer">
+  <strong>UI Layer</strong> — Streamlit app (<code>app.py</code>)<br />
+  <span style="color:#57606a;font-size:0.82rem">6 tabs: Literature Review · Papers · Trends · Visualizations · AI Chat · Multimodal Input</span>
+</div>
+<div class="layer agent">
+  <strong>Agent Layer</strong> — <code>agents/research_agent.py</code><br />
+  <span style="color:#57606a;font-size:0.82rem">Orchestrates pipeline: search → synthesise → detect trends → predict → Q&amp;A</span>
+</div>
+<div class="layer ai">
+  <strong>AI Core</strong> — <code>core/groq_client.py</code><br />
+  <span style="color:#57606a;font-size:0.82rem">Groq LLaMA 3.3 70B: literature synthesis · trend detection · streaming Q&amp;A · insight extraction</span>
+</div>
+<div class="layer">
+  <strong>Data Layer</strong> — <code>core/research_aggregator.py</code><br />
+  <span style="color:#57606a;font-size:0.82rem">arXiv Atom API · Semantic Scholar Graph API · CrossRef REST API → deduplicate → rank</span>
+</div>
+<div class="layer vis">
+  <strong>Multimodal</strong> — <code>core/multimodal_processor.py</code><br />
+  <span style="color:#57606a;font-size:0.82rem">PDF (pdfplumber) · DOCX (python-docx) · Images · Paste text · Chart descriptions</span>
+</div>
+<div class="layer ui">
+  <strong>Visualisation Engine</strong> — <code>utils/visualizations.py</code><br />
+  <span style="color:#57606a;font-size:0.82rem">9 interactive Plotly charts: cluster maps · citation networks · radars · heatmaps · gauges</span>
+</div>
+
+<hr class="divider" />
+
+<h2>📁 File Structure</h2>
+<div class="arch-box">
+research_companion/<br />
+├── <strong>app.py</strong>                      ← Main Streamlit application (480 lines)<br />
+├── <strong>launch.py</strong>                   ← Cross-platform launcher<br />
+├── <strong>run.bat</strong>                     ← Windows one-click launcher<br />
+├── <strong>requirements.txt</strong>            ← Python dependencies<br />
+├── <strong>.env</strong>                        ← GROQ_API_KEY<br />
+├── .streamlit/config.toml      ← Theme config<br />
+├── core/<br />
+│   ├── <strong>groq_client.py</strong>          ← Groq SDK wrapper + typed helpers<br />
+│   ├── <strong>research_aggregator.py</strong>  ← Multi-source paper fetching<br />
+│   └── <strong>multimodal_processor.py</strong> ← File/text/image extraction<br />
+├── agents/<br />
+│   └── <strong>research_agent.py</strong>       ← Agentic pipeline orchestration<br />
+└── utils/<br />
+    └── <strong>visualizations.py</strong>      ← 9 Plotly chart builders
+</div>
+
+<hr class="divider" />
+
+<h2>✨ Key Capabilities</h2>
+
+<div class="feature-row">
+  <div class="num">1</div>
+  <div class="content">
+    <h3>Academic Source Fusion</h3>
+    <p>Aggregates papers from arXiv, Semantic Scholar (200M+ papers), and CrossRef in parallel. Deduplicates and ranks by citation count + recency. Falls back to demo data if APIs are unavailable.</p>
+  </div>
+</div>
+<div class="feature-row">
+  <div class="num">2</div>
+  <div class="content">
+    <h3>Multimodal Research Input</h3>
+    <p>Accepts PDF papers, DOCX reports, uploaded images, pasted text, research notes, and chart descriptions. Extracts key claims, methodology, gaps, and keywords using LLaMA 3.3.</p>
+  </div>
+</div>
+<div class="feature-row">
+  <div class="num">3</div>
+  <div class="content">
+    <h3>Predictive &amp; Agentic Layer</h3>
+    <p>Detects 5–7 emerging trends, identifies declining topics, finds citation gaps, generates future research directions, and produces a field-sentiment score with confidence rating.</p>
+  </div>
+</div>
+<div class="feature-row">
+  <div class="num">4</div>
+  <div class="content">
+    <h3>Interactive Visual Dashboard</h3>
+    <p>9 interactive Plotly charts: topic cluster scatter map, citation network graph, publication timeline, trend radar, keyword frequency, sentiment gauge, citation gap heatmap, source distribution pie, and future directions sunburst.</p>
+  </div>
+</div>
+<div class="feature-row">
+  <div class="num">5</div>
+  <div class="content">
+    <h3>Streaming AI Research Chat</h3>
+    <p>Real-time Q&amp;A grounded in loaded papers. Cites sources using [number] notation. Maintains multi-turn conversation history. Powered by Groq's ultra-low latency inference.</p>
+  </div>
+</div>
+
+<hr class="divider" />
+
+<h2>📦 Dependencies</h2>
+<table>
+  <tr><th>Package</th><th>Purpose</th><th>Version</th></tr>
+  <tr><td><code>groq</code></td><td>Groq LLM API (LLaMA 3.3 70B)</td><td><span class="badge badge-green">≥0.9.0</span></td></tr>
+  <tr><td><code>streamlit</code></td><td>Web UI framework</td><td><span class="badge badge-green">≥1.32.0</span></td></tr>
+  <tr><td><code>plotly</code></td><td>Interactive visualisations</td><td><span class="badge badge-blue">≥5.18.0</span></td></tr>
+  <tr><td><code>networkx</code></td><td>Citation network graph layout</td><td><span class="badge badge-blue">≥3.2</span></td></tr>
+  <tr><td><code>pdfplumber</code></td><td>PDF text extraction</td><td><span class="badge badge-purple">≥0.10.0</span></td></tr>
+  <tr><td><code>python-docx</code></td><td>DOCX text extraction</td><td><span class="badge badge-purple">≥1.1.0</span></td></tr>
+  <tr><td><code>requests</code></td><td>arXiv / CrossRef / Semantic Scholar APIs</td><td><span class="badge badge-orange">≥2.31.0</span></td></tr>
+  <tr><td><code>scikit-learn</code></td><td>ML utilities</td><td><span class="badge badge-blue">≥1.3.0</span></td></tr>
+</table>
+
+<hr class="divider" />
+
+<h2>🔑 API Configuration</h2>
+<p>The Groq API key is stored in <code>research_companion/.env</code>:</p>
+<div class="code-block">
+GROQ_API_KEY=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
+</div>
+<p>You can also change it at runtime via the sidebar API Key expander in the UI.</p>
+
+<footer>Made with IBM Bob</footer>
+</div>
+</body>
+</html>
